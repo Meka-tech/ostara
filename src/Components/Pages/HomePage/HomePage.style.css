@@ -1,0 +1,54 @@
+section {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 100%;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.headerSection {
+  justify-content: left;
+}
+.sectionHead {
+  font-size: 35px;
+  font-weight: 900;
+  padding-bottom: 2%;
+  color: rgb(3, 77, 3);
+  text-align: left;
+}
+.sectionContent {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  width: fit-content;
+  padding-bottom: 2%;
+}
+.images {
+  width: 45vw;
+  height: auto;
+}
+.btn-green {
+  background-color: rgb(16, 116, 16);
+  color: white;
+
+  font-size: 16px;
+}
+.btn-green:hover {
+  color: white;
+  background-color: rgb(26, 153, 26);
+  transform: scale(1.05);
+  box-shadow: 5px 6px 5px #888888;
+}
+hr {
+  border: 1px solid green;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.aboutSec {
+  background-color: #ececec;
+}
+.aboutSec,
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
