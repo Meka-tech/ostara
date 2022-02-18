@@ -7,9 +7,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2%;
-  padding: 0;
   position: relative;
-  border: 2px solid rgb(3, 77, 3);
+  border: 2px solid rgb(5, 160, 5);
   display: flex;
   justify-content: center;
 }
@@ -18,7 +17,7 @@
   box-shadow: 5px 5px 12px rgb(170, 170, 170);
   transform: scale(1.05);
   transition: 500ms;
-  border: 2px solid rgb(3, 170, 3);
+  border: 2px solid rgb(3, 250, 3);
 }
 .cropImage {
   object-fit: cover;
@@ -33,13 +32,13 @@
   opacity: 100;
   transition: 100ms;
 }
-.centerDiv {
+.tag {
   position: absolute;
   font-size: 35px;
-  bottom: 40%;
-  right: 40%;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .cropName {
-  font-size: 25px;
+  font-size: 2vw;
 }

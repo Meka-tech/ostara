@@ -23,13 +23,14 @@ const Products = () => {
           <Breadcrumb.Item active>Products and services</Breadcrumb.Item>
         </Breadcrumb>
       </div>
-      <div>
+      <div className="banner">
         <img
           className="headerbanner"
           src={require("../../Images/products.jpg")}
           alt="image of Header "
         />
       </div>
+
       <section>
         <div className="textbanner"> Products & Services</div>
         <div>

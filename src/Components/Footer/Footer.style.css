@@ -1,7 +1,16 @@
 footer {
-  height: 50vh;
   width: 100%;
-  background-color: rgb(20, 20, 29);
+  background-color: rgb(39, 39, 56);
   color: white;
   padding: 5%;
+  max-height: fit-content;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.links {
+  text-align: left;
+}
+h3 {
+  font-size: 25px;
+  padding-bottom: 1%;
 }

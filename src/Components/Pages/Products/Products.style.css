@@ -5,12 +5,13 @@ section {
   margin: auto;
   padding-left: 5%;
   padding-right: 5%;
+  position: relative;
 }
 .headerSection {
   justify-content: left;
 }
 .sectionHead {
-  font-size: 35px;
+  font-size: 2.5vw;
   font-weight: 900;
   padding-bottom: 2%;
   color: rgb(3, 77, 3);
@@ -18,7 +19,7 @@ section {
 }
 .sectionContentP {
   text-align: left;
-  font-size: 20px;
+  font-size: 2vw;
   font-weight: 600;
   width: fit-content;
   padding-bottom: 2%;
@@ -26,15 +27,24 @@ section {
   margin-left: 15%;
   margin-right: 15%;
 }
-.headerbanner {
+.banner {
   margin-top: 0%;
-  width: 100vw;
-  height: 50%;
+  width: 100%;
+  height: auto;
   position: static;
   box-shadow: 5px 5px 12px rgb(165, 164, 164);
+  height: 50%;
+}
+.headerbanner {
+  margin-top: 0%;
+  width: 100%;
+  height: auto;
+  position: static;
+  object-fit: cover;
+  height: auto;
 }
 .textbanner {
-  font-size: 30px;
+  font-size: 4vw;
   margin: auto;
   font-weight: 900;
   color: rgb(3, 77, 3);
@@ -58,7 +68,7 @@ section {
 .animalSection {
   background-color: rgb(255, 255, 255);
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
   margin: auto;
   box-shadow: 10px, 10px, 30px rgb(255, 255, 255);
 }

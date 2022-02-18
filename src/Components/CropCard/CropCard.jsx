@@ -6,7 +6,7 @@ const CropCard = (props) => {
   return (
     <div className="cropcard">
       <img className="cropImage" alt="crop" src={props.image} />
-      <div className="centerDiv">
+      <div className="tag">
         <div className="icon">{props.icon}</div>
         <h1 className="cropName"> {props.name} </h1>
       </div>
