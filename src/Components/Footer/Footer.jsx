@@ -6,13 +6,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="links">
         <h3>Ostara Farms</h3>
-        <p>About Us</p>
-        <p>Products & Services</p>
-        <p>Sustainability</p>
-        <p>Locations</p>
+        <p className="footercontent">About Us</p>
+        <p className="footercontent">Products & Services</p>
+        <p className="footercontent">Sustainability</p>
+        <p className="footercontent">Locations</p>
       </div>
       <div>
-        <p>
+        <p className="footercontent">
           Privacy Policy | Cookie Policy | Terms of Use |Feedback | Contact Us
         </p>
       </div>

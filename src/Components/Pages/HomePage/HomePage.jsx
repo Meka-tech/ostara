@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../../NavBar/NavBar";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./HomePage.style.css";
+import Footer from "../../Footer/Footer";
 
 const HomePage = () => {
   return (
@@ -41,6 +42,7 @@ const HomePage = () => {
         </p>
         <Button variant="green">Find Out More About Us</Button>
       </section>
+      <Footer />
     </div>
   );
 };

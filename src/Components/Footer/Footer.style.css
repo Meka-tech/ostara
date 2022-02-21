@@ -9,8 +9,12 @@ footer {
 }
 .links {
   text-align: left;
+  font-size: 1.5vw;
 }
 h3 {
-  font-size: 25px;
+  font-size: 2vw;
   padding-bottom: 1%;
+}
+.footercontent {
+  font-size: 1.5vw;
 }

@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   overflow-x: hidden;
+  color: rgb(20, 20, 27);
 }
 hr {
   border: 1px solid green;

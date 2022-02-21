@@ -14,9 +14,9 @@
 }
 .cropcard:hover {
   color: white;
-  box-shadow: 5px 5px 12px rgb(170, 170, 170);
+  /* box-shadow: 2px 3px 8px rgb(170, 170, 170); */
   transform: scale(1.05);
-  transition: 500ms;
+  transition: 200ms;
   border: 2px solid rgb(3, 250, 3);
 }
 .cropImage {
@@ -29,7 +29,7 @@
   margin-right: auto;
 }
 .cropImage:hover {
-  opacity: 100;
+  opacity: 1;
   transition: 100ms;
 }
 .tag {
