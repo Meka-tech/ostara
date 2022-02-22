@@ -14,18 +14,16 @@ section {
   font-size: 2.5vw;
   font-weight: 900;
   padding-bottom: 2%;
-  color: rgb(3, 77, 3);
+  color: rgb(22, 18, 29);
   text-align: left;
 }
 .sectionContentP {
   text-align: left;
-  font-size: 2vw;
+  font-size: 18px;
   font-weight: 600;
   width: fit-content;
   padding-bottom: 2%;
   margin-top: 2%;
-  margin-left: 15%;
-  margin-right: 15%;
 }
 .banner {
   margin-top: 0%;
@@ -44,10 +42,10 @@ section {
   height: auto;
 }
 .textbanner {
-  font-size: 4vw;
+  font-size: 35px;
   margin: auto;
   font-weight: 900;
-  color: rgb(3, 77, 3);
+  color: rgb(22, 18, 29);
 }
 .breadcrumb {
   background-color: rgb(238, 236, 236);

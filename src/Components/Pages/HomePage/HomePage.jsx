@@ -16,7 +16,7 @@ const HomePage = () => {
                 {" "}
                 Providing Food Feed and Fibre Whether it's working with rice
               </h2>
-              <p className="sectionContent">
+              <p className="sectionContentH">
                 {" "}
                 farmers in Africa, growing cotton in Australia, or developing
                 innovative ingredients in Asia, we help our customers meet
@@ -34,7 +34,7 @@ const HomePage = () => {
       </section>
       <section>
         <h2 className="sectionHead"> Want to know more about us ?</h2>
-        <p className="sectionContent">
+        <p className="sectionContentH">
           We are a leading food and agri-business, supplying food ingredients,
           feed and fibre to thousands of customers worldwide, ranging from
           multi-national organisations with world famous brands to small family

@@ -24,8 +24,6 @@ section {
   width: fit-content;
   padding-bottom: 2%;
   margin-top: 2%;
-  margin-left: 15%;
-  margin-right: 15%;
 }
 .bannerAbout {
   margin-top: 0%;
@@ -84,12 +82,12 @@ section {
 }
 .lmHeader {
   justify-self: center;
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: 700;
 }
 .learnMore {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 8%;
+  padding-bottom: 8%;
   justify-content: center;
 }
 .aboutgroup {

@@ -35,10 +35,11 @@ const Products = () => {
         <div className="textbanner"> Products & Services</div>
         <div>
           <p className="sectionContentP">
-            We started with one product in one country. Today we work with more
-            than 45 products in over 60 countries. We've done it by identifying
-            opportunities in similar countries, with similar suppliers, channels
-            and customers.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            nec laoreet dolor. Proin in neque lorem. Ut et massa nec tellus
+            finibus facilisis. Quisque semper porta elit at venenatis. Aliquam
+            at malesuada odio. Suspendisse potenti. Vestibulum feugiat sit amet
+            nibh eu molestie. Mauris ornare sapien nec nulla mattis porta.
           </p>
         </div>
       </section>

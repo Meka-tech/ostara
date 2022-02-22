@@ -5,6 +5,7 @@ section {
   margin: auto;
   padding-left: 5%;
   padding-right: 5%;
+  text-align: left;
 }
 .headerSection {
   justify-content: left;
@@ -16,12 +17,13 @@ section {
   color: rgb(3, 77, 3);
   text-align: left;
 }
-.sectionContent {
+.sectionContentH {
   text-align: left;
   font-size: 20px;
   font-weight: 600;
   width: fit-content;
   padding-bottom: 2%;
+  margin-left: 0%;
 }
 .images {
   width: 45vw;
