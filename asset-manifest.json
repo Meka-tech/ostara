@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ostara/static/css/main.ae3b2bc2.css",
-    "main.js": "/ostara/static/js/main.abbc4a20.js",
+    "main.css": "/ostara/static/css/main.213630b8.css",
+    "main.js": "/ostara/static/js/main.bf99c145.js",
     "static/media/cocoa.jpg": "/ostara/static/media/cocoa.6ceb76fb9554bd15e5d9.jpg",
     "static/media/Cow.jpg": "/ostara/static/media/Cow.ed0d457fce28345536dc.jpg",
     "static/media/About.jpg": "/ostara/static/media/About.45b553194838b1d0f8da.jpg",
@@ -16,11 +16,11 @@
     "static/media/Logo.png": "/ostara/static/media/Logo.d3b7d57ab1156da052bc.png",
     "static/media/Logo.svg": "/ostara/static/media/Logo.910ee8bf8680d776a534f3b35a469cca.svg",
     "index.html": "/ostara/index.html",
-    "main.ae3b2bc2.css.map": "/ostara/static/css/main.ae3b2bc2.css.map",
-    "main.abbc4a20.js.map": "/ostara/static/js/main.abbc4a20.js.map"
+    "main.213630b8.css.map": "/ostara/static/css/main.213630b8.css.map",
+    "main.bf99c145.js.map": "/ostara/static/js/main.bf99c145.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae3b2bc2.css",
-    "static/js/main.abbc4a20.js"
+    "static/css/main.213630b8.css",
+    "static/js/main.bf99c145.js"
   ]
 }
