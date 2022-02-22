@@ -18,7 +18,7 @@ const AboutUs = () => {
           <Breadcrumb.Item active>About Us</Breadcrumb.Item>
         </Breadcrumb>
       </div>
-      <div className="bannerAbout">
+      <div data-aos="fade-left" className="bannerAbout">
         <img
           className="headerbanner"
           src={require("../../Images/About.jpg")}
@@ -27,7 +27,7 @@ const AboutUs = () => {
       </div>
 
       <section>
-        <div className="textbanner"> About Us</div>
+        <div className="textbannerA"> About Us</div>
         <div>
           <p className="sectionContent">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -39,41 +39,45 @@ const AboutUs = () => {
           </p>
         </div>
       </section>
-      <div className="motto">
+      <div data-aos="fade-up" className="motto">
         <Container>
           {/* <h2 className="sectionHead"> Crop Production</h2> */}
           <Row className="justify-content-md-center">
-            <Col sm={true}>
+            <Col md={true}>
               <h4 className="mottohead">Purpose & Vision</h4>
               <p className="mottocontent">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                 tempus tempor odio, eu laoreet ex interdum id. Vivamus fermentum
                 luctus tortor, ac porttitor justo.
               </p>
-              <Button variant="green">Read more</Button>
+              <Button data-aos="fade-left" variant="green">
+                Read more
+              </Button>
             </Col>
-            <Col sm={true}>
+            <Col md={true}>
               <h4 className="mottohead">Our Strategy</h4>
               <p className="mottocontent">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                 tempus tempor odio, eu laoreet ex interdum id.
               </p>
-              <Button variant="green">Read more</Button>
+              <Button data-aos="fade-left" variant="green">
+                Read more
+              </Button>
             </Col>
-            <Col sm={true}>
+            <Col md={true}>
               <h4 className="mottohead">Our Values</h4>
               <p className="mottocontent">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                 tempus tempor odio, eu laoreet ex interdum id.
               </p>
-              <Button className="btnAbout" variant="green">
+              <Button data-aos="fade-left" className="btnAbout" variant="green">
                 Read more
               </Button>
             </Col>
           </Row>
         </Container>
       </div>
-      <div className="learnMore">
+      <div data-aos="fade-right" className="learnMore">
         <h2 className="lmHeader">Learn More About Us</h2>
         <div className="lmcontent">
           <div className="aboutgroup">

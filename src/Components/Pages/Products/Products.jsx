@@ -23,7 +23,7 @@ const Products = () => {
           <Breadcrumb.Item active>Products and services</Breadcrumb.Item>
         </Breadcrumb>
       </div>
-      <div className="banner">
+      <div data-aos="fade-left" className="banner">
         <img
           className="headerbanner"
           src={require("../../Images/products.jpg")}
@@ -31,8 +31,8 @@ const Products = () => {
         />
       </div>
 
-      <section>
-        <div className="textbanner"> Products & Services</div>
+      <section data-aos="fade-up">
+        <div className="textbannerP"> Products & Services</div>
         <div>
           <p className="sectionContentP">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -46,8 +46,8 @@ const Products = () => {
 
       <div className="cropSection">
         <Container>
-          <h2 className="sectionHead"> Crop Production</h2>
-          <Row className="justify-content-md-center">
+          <h2 className="sectionHeadP"> Crop Production</h2>
+          <Row data-aos="fade-up" className="justify-content-md-center">
             <Col sm={true}>
               <CropCard
                 name="Cocoa"
@@ -82,8 +82,8 @@ const Products = () => {
       </div>
       <div className="animalSection">
         <Container>
-          <h2 className="sectionHead"> Animal Production</h2>
-          <Row className="justify-content-md-center">
+          <h2 className="sectionHeadP"> Animal Production</h2>
+          <Row data-aos="fade-left" className="justify-content-md-center">
             <Col sm={true}>
               <CropCard
                 name="Cow"

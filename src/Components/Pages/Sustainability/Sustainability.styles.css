@@ -1,8 +1,15 @@
 .textbanner {
   color: rgb(10, 2, 22);
   padding-bottom: 1%;
-  font-size: 35px;
+  font-size: 3.5vh;
 }
 .sectionContentS {
-  font-size: 18px;
+  font-size: calc(0.3vw + 1.8vh);
+}
+.textbannerS {
+  font-size: 3.5vh;
+  margin: auto;
+  font-weight: 900;
+  color: rgb(22, 18, 29);
+  margin-bottom: 1%;
 }

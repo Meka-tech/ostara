@@ -23,11 +23,6 @@ const Footer = () => {
           Locations
         </Link>
       </div>
-      <div>
-        <p className="footercontent">
-          Privacy Policy | Cookie Policy | Terms of Use |Feedback | Contact Us
-        </p>
-      </div>
     </footer>
   );
 };

@@ -4,11 +4,17 @@ import HomePage from "./Components/Pages/HomePage/HomePage";
 import Products from "./Components/Pages/Products/Products";
 import AboutUs from "./Components/Pages/AboutUs/AboutUs";
 import Sustainability from "./Components/Pages/Sustainability/Sustainability";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Location from "./Components/Pages/Locations/Location";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import Aos from "aos";
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <BrowserRouter>
+    <Router>
       <Routes className="App">
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<Products />} />
@@ -16,7 +22,7 @@ function App() {
         <Route path="/sustainability" element={<Sustainability />} />
         <Route path="/location" element={<Location />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 

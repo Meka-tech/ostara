@@ -13,7 +13,7 @@ const Sustainability = () => {
           <Breadcrumb.Item active>Sustainability</Breadcrumb.Item>
         </Breadcrumb>
       </div>
-      <div className="banner">
+      <div data-aos="fade-left" className="banner">
         <img
           className="headerbanner"
           src={require("../../Images/Sustainability.jpg")}
@@ -21,7 +21,7 @@ const Sustainability = () => {
         />
       </div>
       <section>
-        <div className="textbanner"> Sustainability</div>
+        <div className="textbannerS"> Sustainability</div>
         <div>
           <p className="sectionContentS">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas

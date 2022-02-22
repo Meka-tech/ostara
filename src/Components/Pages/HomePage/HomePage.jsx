@@ -8,11 +8,11 @@ const HomePage = () => {
   return (
     <div>
       <NavBar />
-      <section className="section">
+      <section data-aos="fade-up">
         <Container>
           <Row className="justify-content-md-center">
             <Col className="headerSection " lg={true}>
-              <h2 className="sectionHead">
+              <h2 className="sectionHeadH">
                 {" "}
                 Providing Food Feed and Fibre Whether it's working with rice
               </h2>
@@ -33,14 +33,16 @@ const HomePage = () => {
         <hr />
       </section>
       <section>
-        <h2 className="sectionHead"> Want to know more about us ?</h2>
+        <h2 className="sectionHeadH"> Want to know more about us ?</h2>
         <p className="sectionContentH">
           We are a leading food and agri-business, supplying food ingredients,
           feed and fibre to thousands of customers worldwide, ranging from
           multi-national organisations with world famous brands to small family
           run businesses.
         </p>
-        <Button variant="green">Find Out More About Us</Button>
+        <Button data-aos="fade-left" variant="green">
+          Find Out More About Us
+        </Button>
       </section>
       <Footer />
     </div>

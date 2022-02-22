@@ -1,6 +1,6 @@
 section {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   width: 100%;
   margin: auto;
   padding-left: 5%;
@@ -10,29 +10,29 @@ section {
 .headerSection {
   justify-content: left;
 }
-.sectionHead {
-  font-size: 35px;
+.sectionHeadH {
+  font-size: 3.5vh;
   font-weight: 900;
   padding-bottom: 2%;
-  color: rgb(3, 77, 3);
+  color: rgb(22, 18, 29);
   text-align: left;
 }
 .sectionContentH {
   text-align: left;
-  font-size: 20px;
+  font-size: calc(0.3vw + 1.8vh);
   font-weight: 600;
   width: fit-content;
   padding-bottom: 2%;
   margin-left: 0%;
 }
 .images {
-  width: 45vw;
+  width: 80%;
   height: auto;
 }
 .btn-green {
   background-color: rgb(16, 116, 16);
   color: white;
-  font-size: 1.5vw;
+  font-size: calc(0.3vw + 1.8vh);
   width: fit-content;
 }
 .btn-green:hover {
@@ -49,6 +49,6 @@ hr {
 }
 .aboutSec,
 p {
-  font-size: 16px;
+  font-size: 2.5vh;
   font-weight: 500;
 }

@@ -1,6 +1,6 @@
 .cropcard {
   width: 20vw;
-  height: 35vh;
+  height: 20vw;
   border-radius: 10px;
   background-color: white;
   margin-top: 2%;
@@ -34,11 +34,11 @@
 }
 .tag {
   position: absolute;
-  font-size: 35px;
+  font-size: 4vh;
   top: 50%;
   transform: translate(0, -50%);
 }
 
 .cropName {
-  font-size: 2vw;
+  font-size: calc(0.3vw + 1.8vh);
 }
