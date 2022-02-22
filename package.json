@@ -1,7 +1,7 @@
 {
   "name": "ostara-farms",
   "version": "0.1.0",
-  "homepage": "https://Meka-tech.github.io/ostara-farms",
+  "homepage": "https://Meka-tech.github.io/ostara",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
