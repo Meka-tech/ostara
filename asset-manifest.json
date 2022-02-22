@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ostara/static/css/main.e587ab95.css",
+    "main.js": "/ostara/static/js/main.4b6a7262.js",
+    "static/media/cocoa.jpg": "/ostara/static/media/cocoa.6ceb76fb9554bd15e5d9.jpg",
+    "static/media/Cow.jpg": "/ostara/static/media/Cow.ed0d457fce28345536dc.jpg",
+    "static/media/About.jpg": "/ostara/static/media/About.45b553194838b1d0f8da.jpg",
+    "static/media/Sustainability.jpg": "/ostara/static/media/Sustainability.abc86410c5ce63961f28.jpg",
+    "static/media/products.jpg": "/ostara/static/media/products.88b795bc46debaec0bcd.jpg",
+    "static/media/palm.jpg": "/ostara/static/media/palm.c66b5e197cd86af52b13.jpg",
+    "static/media/coffee.jpg": "/ostara/static/media/coffee.beecafd06703642fb7f8.jpg",
+    "static/media/nuts.jpg": "/ostara/static/media/nuts.fbeb653573548545e0d6.jpg",
+    "static/media/corn.png": "/ostara/static/media/corn.8bb2627e18c0d44b91bd.png",
+    "static/media/Goat.jpg": "/ostara/static/media/Goat.361d81a4cd0e305da59a.jpg",
+    "static/media/Pig.jpg": "/ostara/static/media/Pig.d03e107a7e8cfe3cb59f.jpg",
+    "static/media/Logo.png": "/ostara/static/media/Logo.d3b7d57ab1156da052bc.png",
+    "static/media/Logo.svg": "/ostara/static/media/Logo.910ee8bf8680d776a534f3b35a469cca.svg",
+    "index.html": "/ostara/index.html",
+    "main.e587ab95.css.map": "/ostara/static/css/main.e587ab95.css.map",
+    "main.4b6a7262.js.map": "/ostara/static/js/main.4b6a7262.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e587ab95.css",
+    "static/js/main.4b6a7262.js"
+  ]
+}
