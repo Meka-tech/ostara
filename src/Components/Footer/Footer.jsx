@@ -1,29 +1,56 @@
 import React from "react";
 import "./Footer.style.css";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { mobile } from "../../responsive";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 56);
+  color: white;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+`;
+const Title = styled.h1`
+  font-size: 30px;
+  margin: 20px 0px;
+`;
+const Links = styled.div``;
+
+const FooterLink = styled.p`
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  ${mobile({ fontSize: "14px" })};
+`;
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="links">
-        <h3>Ostara Farms</h3>
-        <Link className="footercontent" to="/about-us">
-          About Us
+    <Container>
+      <Links>
+        <Title>Ostara Farms</Title>
+        <Link to="/about-us">
+          {" "}
+          <FooterLink>About Us</FooterLink>
         </Link>
-        <br />
-        <Link className="footercontent" to="/products">
-          Products & Services
+
+        <Link to="/products">
+          {" "}
+          <FooterLink>Products & Services</FooterLink>
         </Link>
-        <br />
-        <Link className="footercontent" to="/sustainability">
-          Sustainability
+
+        <Link to="/sustainability">
+          {" "}
+          <FooterLink>Sustainability</FooterLink>
         </Link>
-        <br />
-        <Link className="footercontent" to="/location">
-          Locations
+
+        <Link to="/location">
+          <FooterLink>Locations</FooterLink>
         </Link>
-      </div>
-    </footer>
+      </Links>
+    </Container>
   );
 };
 
