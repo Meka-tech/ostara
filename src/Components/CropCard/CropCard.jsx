@@ -37,7 +37,7 @@ const Card = styled.div`
   border-radius: 10px;
   transition: all 0.5s ease;
   ${mobile({ width: "100px", height: "100px" })}
-  ${tab({ width: "150px", height: "150px" })}
+  ${tab({ width: "100px", height: "100px" })}
   &:hover {
     transform: scale(1.03);
     box-shadow: 3px 3px 6px gray;

@@ -60,7 +60,7 @@ const Content = styled.p`
 
 const CardSection = styled.div`
   margin: 100px 30px;
-  ${mobile({ margin: "50px 15px" })}
+  ${mobile({ margin: "50px 5px" })}
   ${tab({ margin: "75px 22.5px" })}
 `;
 
@@ -70,7 +70,7 @@ const Cards = styled.div`
   justify-content: center;
   align-items: center;
   margin: 50px;
-  ${mobile({ flexDirection: "column" })}
+  ${mobile({ margin: "20px" })}
 `;
 
 const Products = () => {
