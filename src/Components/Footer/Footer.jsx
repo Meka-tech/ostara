@@ -31,22 +31,22 @@ const Footer = () => {
     <Container>
       <Links>
         <Title>Ostara Farms</Title>
-        <Link to="/about-us">
+        <Link to="/about-us" className="link">
           {" "}
           <FooterLink>About Us</FooterLink>
         </Link>
 
-        <Link to="/products">
+        <Link className="link" to="/products">
           {" "}
           <FooterLink>Products & Services</FooterLink>
         </Link>
 
-        <Link to="/sustainability">
+        <Link className="link" to="/sustainability">
           {" "}
           <FooterLink>Sustainability</FooterLink>
         </Link>
 
-        <Link to="/location">
+        <Link className="link" to="/location">
           <FooterLink>Locations</FooterLink>
         </Link>
       </Links>

@@ -3,6 +3,7 @@ import "./CropCard.style.css";
 import { RiSeedlingLine } from "react-icons/ri";
 import styled from "styled-components";
 import { mobile } from "../../responsive";
+import { tab } from "../../responsive";
 
 const Tag = styled.div`
   position: absolute;
@@ -36,7 +37,7 @@ const Card = styled.div`
   border-radius: 10px;
   transition: all 0.5s ease;
   ${mobile({ width: "100px", height: "100px" })}
-
+  ${tab({ width: "150px", height: "150px" })}
   &:hover {
     transform: scale(1.03);
     box-shadow: 3px 3px 6px gray;
@@ -57,6 +58,7 @@ const Icon = styled.div`
 const CropName = styled.h1`
   font-size: 25px;
   ${mobile({ fontSize: "10px" })}
+  ${tab({ fontSize: "15px" })}
 `;
 
 const CropCard = (props) => {

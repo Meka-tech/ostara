@@ -1,5 +1,5 @@
-import React from "react";
-import NavBar from "../../NavBar/NavBar";
+import React, { useState } from "react";
+import NavBar from "../../NavBar/index.jsx";
 import "./Products.style.css";
 import { Breadcrumb } from "react-bootstrap";
 import CropCard from "../../CropCard/CropCard";
@@ -15,6 +15,9 @@ import { GiPalmTree } from "react-icons/gi";
 
 import styled from "styled-components";
 import { mobile } from "../../../responsive";
+import { Link } from "react-router-dom";
+import { tab } from "../../../responsive";
+import Sidebar from "../../Sidebar/index.jsx";
 
 const Container = styled.div``;
 
@@ -45,16 +48,20 @@ const Header = styled.h1`
   margin: 100px 0px;
   ${mobile({ fontSize: "20px", margin: "15px 0px" })}
   text-align:left;
+  ${tab({ fontSize: "25px", margin: "15px 0px" })}
+  text-align:left;
 `;
 
 const Content = styled.p`
   font-size: 20px;
   ${mobile({ fontSize: "16px" })}
+  ${tab({ fontSize: "18px" })}
 `;
 
 const CardSection = styled.div`
-  margin: 0px 20px;
   margin: 100px 30px;
+  ${mobile({ margin: "50px 15px" })}
+  ${tab({ margin: "75px 22.5px" })}
 `;
 
 const Cards = styled.div`
@@ -67,12 +74,21 @@ const Cards = styled.div`
 `;
 
 const Products = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <Container>
       <div>
-        <NavBar />
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <NavBar toggle={toggle} />
         <Breadcrumb className="breadcrumb">
-          <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+          <Breadcrumb.Item>
+            {" "}
+            <Link to="/">Home</Link>
+          </Breadcrumb.Item>
           <Breadcrumb.Item active>Products and services</Breadcrumb.Item>
         </Breadcrumb>
       </div>
@@ -102,12 +118,13 @@ const Products = () => {
             image={require("../../Images/cocoa.jpg")}
             icon={<RiSeedlingLine />}
           />
-
-          <CropCard
-            name="Palm"
-            image={require("../../Images/palm.jpg")}
-            icon={<GiPalmTree />}
-          />
+          <Link to="/products/palm" className="link">
+            <CropCard
+              name="Palm"
+              image={require("../../Images/palm.jpg")}
+              icon={<GiPalmTree />}
+            />
+          </Link>
 
           <CropCard
             name="Nuts"

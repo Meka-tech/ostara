@@ -9,6 +9,7 @@ import Location from "./Components/Pages/Locations/Location";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
+import Palm from "./Components/Pages/Products/Palm/Palm";
 function App() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -18,6 +19,7 @@ function App() {
       <Routes className="App">
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/palm" element={<Palm />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/sustainability" element={<Sustainability />} />
         <Route path="/location" element={<Location />} />

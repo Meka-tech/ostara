@@ -1,9 +1,10 @@
-import React from "react";
-import NavBar from "../../NavBar/NavBar";
+import React, { useState } from "react";
+import NavBar from "../../NavBar/index.jsx";
 import { Breadcrumb } from "react-bootstrap";
 import "./Sustainability.styles.css";
 import styled from "styled-components";
 import { mobile } from "../../../responsive";
+import Sidebar from "../../Sidebar/index.jsx";
 
 const Container = styled.div``;
 
@@ -39,10 +40,16 @@ const Content = styled.p`
   ${mobile({ fontSize: "16px" })}
 `;
 const Sustainability = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <Container>
       <div>
-        <NavBar />
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <NavBar toggle={toggle} />
         <Breadcrumb className="breadcrumb">
           <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
           <Breadcrumb.Item active>Sustainability</Breadcrumb.Item>

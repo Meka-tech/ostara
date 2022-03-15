@@ -1,5 +1,5 @@
-import React from "react";
-import NavBar from "../../NavBar/NavBar";
+import React, { useState } from "react";
+import NavBar from "../../NavBar/index.jsx";
 import { Breadcrumb } from "react-bootstrap";
 // import { Container, Row, Col } from "react-bootstrap";
 import Footer from "../../Footer/Footer";
@@ -10,6 +10,8 @@ import { GiInjustice } from "react-icons/gi";
 import { MdOutlinePeople } from "react-icons/md";
 import styled from "styled-components";
 import { mobile } from "../../../responsive";
+import { tab } from "../../../responsive";
+import Sidebar from "../../Sidebar/index.jsx";
 
 const Container = styled.div``;
 
@@ -41,11 +43,13 @@ const Header = styled.h1`
   font-weight: 700;
   margin: 35px 0px;
   ${mobile({ fontSize: "20px", margin: "15px 0px" })}
+  ${tab({ fontSize: "20px", margin: "15px 0px" })}
 `;
 
 const Content = styled.p`
   font-size: 20px;
   ${mobile({ fontSize: "16px" })}
+  ${tab({ fontSize: "16px" })}
 `;
 
 const Button = styled.button`
@@ -58,6 +62,7 @@ const Button = styled.button`
   margin: 10px 0px;
   border-radius: 10px;
   ${mobile({ fontSize: "12px" })};
+  ${tab({ fontSize: "12px" })}
 `;
 
 const Mottos = styled.div`
@@ -79,11 +84,14 @@ const MottoHeader = styled.h1`
   font-size: 25px;
   font-weight: 700;
   margin: 20px 0px;
-  ${mobile({ fontSize: "20px", margin: "10px 0px" })}
+  ${mobile({ fontSize: "20px", margin: "10px 0px" })}${tab({
+    fontSize: "20px",
+  })}
 `;
 const MottoContent = styled.p`
   font-size: 18px;
-  ${mobile({ fontSize: "16px" })}
+  ${mobile({ fontSize: "14px" })}
+  ${tab({ fontSize: "14px" })}
 `;
 
 const LearnMore = styled.div`
@@ -109,10 +117,16 @@ const AbGroupText = styled.p`
 `;
 
 const AboutUs = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <Container>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <NavBar toggle={toggle} />
       <Top>
-        <NavBar />
         <Breadcrumb className="breadcrumb">
           <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
           <Breadcrumb.Item active>About Us</Breadcrumb.Item>
