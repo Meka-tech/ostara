@@ -130,7 +130,10 @@ const HomePage = () => {
           multi-national organisations with world famous brands to small family
           run businesses.
         </Content>
+        <Link to = "/about-us">
         <Button data-aos="fade-left">More</Button>
+        </Link>
+     
       </Bottom>
       <Footer />
     </Container>

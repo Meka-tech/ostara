@@ -35,16 +35,18 @@ export const Icon = styled.div`
 
 export const SidebarWrapper = styled.div`
   color: white;
+  margin-left: 0;
 `;
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
-  ${mobile({ gridTemplateRows: "repeat(6,60px)" })}
+  padding-left: 0;
 `;
 
 export const SidebarLink = styled.a`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,10 +58,6 @@ export const SidebarLink = styled.a`
   font-weight: 600;
   transition: 0.2s ease-in-out;
   color: black;
-  &:hover {
-    color: rgb(16, 150, 16);
-    transition: 0.2s ease-in-out;
-  }
   ${tab({ fontSize: "25px" })}
   ${mobile({ fontSize: "16px" })}
 `;
