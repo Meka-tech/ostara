@@ -7,7 +7,7 @@ import {
   SidebarLink,
   SidebarMenu,
   SidebarWrapper,
-} from "./SidebatElement";
+} from "./SidebarElement";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (

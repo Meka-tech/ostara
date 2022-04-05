@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import NavBar from "../../NavBar/index.jsx";
-// import { Container, Row, Col, Button } from "react-bootstrap";
 import "./HomePage.style.css";
 import styled from "styled-components";
 import Footer from "../../Footer/Footer";
@@ -8,6 +7,8 @@ import { mobile } from "../../../responsive";
 import { tab } from "../../../responsive";
 import { Link } from "react-router-dom";
 import Sidebar from "../../Sidebar/index.jsx";
+import { ReactComponent as Plant1 } from "../../Images/undraw_flowers_vx06.svg";
+import { ReactComponent as Plant2 } from "../../Images/Watering_Plant_Outline.svg";
 
 const Container = styled.div``;
 
@@ -19,7 +20,7 @@ const Top = styled.div`
   justify-content: space-between;
   justify-items: center;
   align-items: center;
-  ${mobile({ flexDirection: "column" })}
+  ${mobile({ flexDirection: "column", padding: "5px", margin: "15px 5px" })}
 `;
 
 const Text = styled.div`
@@ -53,7 +54,7 @@ const Button = styled.button`
   font-size: 18px;
   width: fit-content;
   border: none;
-  margin: 25px 0px;
+  margin: 15px 0px;
   border-radius: 10px;
   ${mobile({ fontSize: "14px" })};
   ${tab({ fontSize: "14px" })};
@@ -76,7 +77,9 @@ const Image = styled.img`
 const Bottom = styled.div`
   text-align: left;
   padding: 20px;
-  margin: 100px 40px;
+  margin: 25px 40px;
+  ${mobile({ padding: "10px", margin: "15px 20px" })}
+  ${tab({ padding: "10px", margin: "15px 20px" })}
 `;
 const Hr = styled.hr`
   display: flex;
@@ -86,6 +89,17 @@ const Hr = styled.hr`
   align-self: center;
   ${mobile({ width: "70%", margin: "20px 15%" })}
   ${tab({ width: "70%", margin: "20px 15%" })}
+`;
+const Illustrations = styled.div`
+  width: 100vw;
+  position: relative;
+  height: fit-content;
+  padding: 0px 20px;
+  ${mobile({ padding: "10px 30px" })}
+  ${tab({ padding: "10px 30px" })}
+`;
+const SVG = styled.div`
+  width: 100%;
 `;
 
 const HomePage = () => {
@@ -122,6 +136,12 @@ const HomePage = () => {
         </ImageContainer>
       </Top>
       <Hr />
+      <Illustrations>
+        <SVG data-aos="fade-right" style={{ marginLeft: "-20vw" }}>
+          <Plant1 className="svg" />
+        </SVG>
+      </Illustrations>
+
       <Bottom>
         <Header> Want to know more about us ?</Header>
         <Content>
@@ -130,11 +150,15 @@ const HomePage = () => {
           multi-national organisations with world famous brands to small family
           run businesses.
         </Content>
-        <Link to = "/about-us">
-        <Button data-aos="fade-left">More</Button>
+        <Link to="/about-us">
+          <Button data-aos="fade-left">More</Button>
         </Link>
-     
       </Bottom>
+      <Illustrations>
+        <SVG data-aos="fade-left">
+          <Plant2 className="svg" />
+        </SVG>
+      </Illustrations>
       <Footer />
     </Container>
   );

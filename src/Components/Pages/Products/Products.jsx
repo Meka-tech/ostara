@@ -3,7 +3,6 @@ import NavBar from "../../NavBar/index.jsx";
 import "./Products.style.css";
 import { Breadcrumb } from "react-bootstrap";
 import CropCard from "../../CropCard/CropCard";
-// import { Container, Row, Col } from "react-bootstrap";
 import Footer from "../../Footer/Footer";
 import { RiSeedlingLine } from "react-icons/ri";
 import { GiGoat } from "react-icons/gi";
@@ -12,14 +11,15 @@ import { GiPig } from "react-icons/gi";
 import { GiCoffeeBeans } from "react-icons/gi";
 import { GiCoconuts } from "react-icons/gi";
 import { GiPalmTree } from "react-icons/gi";
-
 import styled from "styled-components";
 import { mobile } from "../../../responsive";
 import { Link } from "react-router-dom";
 import { tab } from "../../../responsive";
 import Sidebar from "../../Sidebar/index.jsx";
 
-const Container = styled.div``;
+const Container = styled.div`
+  overflow-x: hidden;
+`;
 
 const Top = styled.div`
   text-align: left;
@@ -45,7 +45,7 @@ const Header = styled.h1`
   color: rgb(22, 18, 29);
   font-size: 35px;
   font-weight: 700;
-  margin: 100px 0px;
+  margin: 50px 0px;
   ${mobile({ fontSize: "20px", margin: "15px 0px" })}
   text-align:left;
   ${tab({ fontSize: "25px", margin: "15px 0px" })}

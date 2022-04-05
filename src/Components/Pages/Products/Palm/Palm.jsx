@@ -32,13 +32,14 @@ const Board = styled.div`
   box-shadow: 1px 1px 5px gray;
   padding: 30px;
   width: 45%;
+  max-width: fit-content;
   margin: 20px;
   border-radius: 10px;
   transition: all 0.3s ease;
   ${mobile({ padding: "15px", margin: "8px", width: "90%" })}
   ${tab({ padding: "15px", margin: "8px", width: "90%" })}
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
     box-shadow: 2px 2px 8px gray;
   }
 `;
@@ -89,6 +90,7 @@ const Content = styled.p`
 `;
 const Table = styled.table`
   padding: 10px;
+  max-width: fit-content;
 `;
 const TableBody = styled.tbody``;
 const TableRow = styled.tr``;

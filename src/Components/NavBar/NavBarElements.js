@@ -3,7 +3,8 @@ import { mobile } from "../../responsive";
 import { tab } from "../../responsive";
 
 export const Nav = styled.nav`
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -39,12 +40,12 @@ export const NavLogo = styled.div`
   ${tab({ marginLeft: "0px" })}
 `;
 export const Logo = styled.img`
-  width: 15vh;
+  width: 18vh;
   height: auto;
-  margin-bottom: 10%;
+  margin: auto;
   transform: scale(2);
-  ${mobile({ transform: "scale(1)" })}
-  ${tab({ transform: "scale(1.5)" })}
+  ${mobile({ transform: "scale(0.9)", margin: "auto" })}
+  ${tab({ transform: "scale(1.5)", margin: "auto" })}
 `;
 export const MobileIcon = styled.div`
   display: none;
@@ -65,6 +66,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  margin: auto 0px;
   @media screen and (max-width: 768px) {
     display: none;
   } ;
